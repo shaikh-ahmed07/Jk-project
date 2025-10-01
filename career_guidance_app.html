@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career Guidance - Jammu & Kashmir</title>
+    <meta name="theme-color" content="#2563eb">
+    <link rel="stylesheet" href="styles.css">
+   
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <div class="logo"> <img src="IMG_8933.jpg"  height="60px"></div>
+                <div class="brand-text">
+                    <h1>Career Guidance</h1>
+                    <p>Jammu & Kashmir</p>
+                </div>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active" data-page="home">🏠 Home</a></li>
+                <li><a href="#quiz" class="nav-link" data-page="quiz">📝 Quiz</a></li>
+                <li><a href="#careers" class="nav-link" data-page="careers">💼 Careers</a></li>
+                <li><a href="#colleges" class="nav-link" data-page="colleges">🏫 Colleges</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <!-- Home Page -->
+        <div id="home" class="page active">
+            <div class="hero">
+                <h1 class="fade-in-up">Find Your Perfect Career Path</h1>
+                <p class="fade-in-up">Discover career opportunities, take personalized quizzes, and explore educational institutions in Jammu & Kashmir - all available offline!</p>
+                <div class="hero-buttons fade-in-up">
+                    <a href="#quiz" class="btn btn-primary" data-page="quiz">
+                        📝 Take Career Quiz
+                    </a>
+                    <a href="#careers" class="btn btn-secondary" data-page="careers">
+                        💼 Explore Careers
+                    </a>
+                </div>
+            </div>
+
+            <div class="features">
+                <div class="grid">
+                    <div class="card feature-card fade-in-up">
+                        <div class="feature-icon" >📝</div>
+                        <h3>Career Assessment Quiz</h3>
+                        <p>Take our comprehensive quiz to discover careers that match your interests, skills, and educational background.</p>
+                    </div>
+                    <div class="card feature-card fade-in-up">
+                        <div class="feature-icon">💼</div>
+                        <h3>Career Database</h3>
+                        <p>Explore detailed information about various career paths including education requirements and growth prospects.</p>
+                    </div>
+                    <div class="card feature-card fade-in-up">
+                        <div class="feature-icon">🏫</div>
+                        <h3>College Directory</h3>
+                        <p>Find colleges and institutes in Jammu & Kashmir with location maps and detailed information.</p>
+                    </div>
+                    <div class="card feature-card fade-in-up">
+                        <div class="feature-icon">📱</div>
+                        <h3>Offline Ready</h3>
+                        <p>Access all features even without internet connection. Perfect for students in remote areas.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quiz Page -->
+        <div id="quiz" class="page" style="display: none;">
+            <div class="card quiz-container">
+                <h1>Career Assessment Quiz</h1>
+                <p>Answer these questions to discover careers that match your interests and skills.</p>
+                
+                <!-- <div id="previous-result"></div> -->
+                
+                <div id="quiz-questions"></div>
+                
+                <button id="submit-quiz" class="btn btn-primary" style="margin-top: 2rem; width: 100%;">
+                    Submit Quiz
+                </button>
+                
+                <div id="quiz-results"></div>
+            </div>
+        </div>
+
+        <!-- Careers Page -->
+        <div id="careers" class="page" style="display: none;">
+            <div class="card">
+                <h1>Career Opportunities</h1>
+                <p>Explore various career paths and find the perfect match for your interests.</p>
+                
+                <div class="search-container">
+                    <input type="text" id="career-search" class="search-input" placeholder="Search careers (e.g., Software Developer, Doctor, Engineer...)">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <div id="career-grid" class="grid"></div>
+            </div>
+        </div>
+
+        <!-- Colleges Page -->
+        <div id="colleges" class="page" style="display: none;">
+            <div class="card">
+                <h1>Colleges & Institutes</h1>
+                <p>Discover educational institutions in Jammu & Kashmir. Click markers on the map to view college details.</p>
+                
+                <div class="search-container">
+                    <input type="text" id="college-search" class="search-input" placeholder="Filter by name or city (e.g., Srinagar, Kashmir University...)">
+                    <span class="search-icon">🔍</span>
+                </div>
+                
+                <!-- <div id="map" class="map-container"></div> -->
+                
+                <div id="college-grid" class="grid"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 Career Guidance J&K. Empowering students with offline career resources.</p>
+    </footer>
+
+    <!-- Offline Indicator -->
+    <div class="offline-indicator" id="offline-indicator">
+        ✅ Working Offline
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+                
